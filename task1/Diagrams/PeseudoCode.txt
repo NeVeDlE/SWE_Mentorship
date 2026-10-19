@@ -1,0 +1,51 @@
+
+BEGIN
+
+  employee = authenticateUser()
+  displayVacationSummary(employee)
+
+  IF employee.selectsCreateRequest() THEN
+
+    vacationType = selectVacationType()
+
+    REPEAT
+      request = getVacationDetails()
+      isValid = validateRequest(request)
+
+      IF NOT isValid THEN
+        displayValidationErrors()
+        choice = getEmployeeChoice()
+      END IF
+
+    UNTIL isValid OR choice = "Cancel"
+
+    IF isValid THEN
+      saveRequest(request)
+
+      IF requiresManagerApproval(request) THEN
+        updateStatus(request, "Pending")
+        notifyManager(request)
+      END IF
+
+      displayHomePage()
+    END IF
+
+  END IF
+
+  WHILE hasPendingRequests(manager) DO
+
+    request = selectPendingRequest(manager)
+    decision = getManagerDecision(request)
+
+    IF decision = "Reject" THEN
+      reason = getRejectionReason()
+      saveRejectionReason(request, reason)
+    END IF
+
+    updateStatus(request, decision)
+    notifyEmployee(request)
+    displayHomePage()
+
+  END WHILE
+
+END
