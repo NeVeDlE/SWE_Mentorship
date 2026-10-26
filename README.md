@@ -7,5 +7,6 @@ The mentorship covers software analysis, system design, clean code, backend arch
 ## Tasks
 
 1. [Task 1 — Software Analysis: Vacation Tracking System](task1/task_readme.md)
+2. [Task 2 — Software Design: Vacation Request Management](task2/task_readme.md)
 
 More tasks will be added throughout the mentorship.
