@@ -1,0 +1,30 @@
+BEGIN CancelApprovedRequest
+
+    DISPLAY VacationRequests
+
+    INPUT RequestID
+
+    IF RequestStatus = "Approved" AND
+       (RequestDate > Today OR RequestDate >= Last5BusinessDays) THEN
+
+        IF RequestDate < Today THEN
+            INPUT Explanation
+        END IF
+
+        OUTPUT "Confirm Cancellation?"
+        INPUT Confirmation
+
+        IF Confirmation = "Yes" THEN
+            SET RequestStatus = "Canceled"
+            RETURN VacationDays TO EmployeeBalance
+            SEND Email TO Manager
+            OUTPUT "Request Canceled Successfully"
+        END IF
+
+    ELSE
+        OUTPUT "Request Cannot Be Canceled"
+    END IF
+
+    DISPLAY UpdatedVTSHomePage
+
+END

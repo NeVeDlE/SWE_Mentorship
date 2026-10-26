@@ -522,8 +522,8 @@
     },
     {
       "type": "text",
-      "version": 1296,
-      "versionNonce": 873695403,
+      "version": 1294,
+      "versionNonce": 1534121250,
       "index": "b0u",
       "isDeleted": false,
       "id": "Y1HJGAJ6njLOP2kqcoQBL",
@@ -555,16 +555,16 @@
           "type": "arrow"
         }
       ],
-      "updated": 1792928810275,
+      "updated": 1792923237241,
       "link": null,
       "locked": false,
       "fontSize": 20,
       "fontFamily": 1,
-      "text": "Provide Short\nExmplaination &\nConfirm Cancellation",
+      "text": "Provide Short\nExmplaination /\nConfirm Cancellation",
       "textAlign": "center",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "Provide Short Exmplaination & Confirm Cancellation",
+      "originalText": "Provide Short Exmplaination / Confirm Cancellation",
       "autoResize": false,
       "lineHeight": 1.25
     },
@@ -1047,10 +1047,10 @@
     {
       "id": "x-9ehiTOV5QyLFkSYBjMW",
       "type": "arrow",
-      "x": 760.4701035793132,
-      "y": 633.7908952482996,
-      "width": 4.76050924162837,
-      "height": 79.28539368690986,
+      "x": 765.2288984988422,
+      "y": 633.0762889352094,
+      "width": 0,
+      "height": 80,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -1066,11 +1066,11 @@
         "type": 2
       },
       "seed": 852748514,
-      "version": 22,
-      "versionNonce": 1033059147,
+      "version": 20,
+      "versionNonce": 1033253118,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1792928810276,
+      "updated": 1792923233673,
       "link": null,
       "locked": false,
       "points": [
@@ -1079,8 +1079,8 @@
           0
         ],
         [
-          4.76050924162837,
-          79.28539368690986
+          0,
+          80
         ]
       ],
       "lastCommittedPoint": null,
@@ -1103,8 +1103,8 @@
       "type": "arrow",
       "x": 758.0860413559851,
       "y": 807.3620032209237,
-      "width": 2.844666580400144,
-      "height": 98.14099702380952,
+      "width": 2.8571428571428896,
+      "height": 98.57142857142856,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -1120,11 +1120,11 @@
         "type": 2
       },
       "seed": 94721378,
-      "version": 35,
-      "versionNonce": 1841535467,
+      "version": 33,
+      "versionNonce": 849207522,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1792928810276,
+      "updated": 1792923237241,
       "link": null,
       "locked": false,
       "points": [
@@ -1133,8 +1133,8 @@
           0
         ],
         [
-          2.844666580400144,
-          98.14099702380952
+          2.8571428571428896,
+          98.57142857142856
         ]
       ],
       "lastCommittedPoint": null,
@@ -1451,10 +1451,10 @@
       "elbowed": false
     },
     {
-      "id": "VphMtQLezIJDXkp-1B9H_",
+      "id": "IKB1Ew2zXQ59URrm4TiBh",
       "type": "text",
-      "x": 942.3122318321755,
-      "y": 493.5643841733046,
+      "x": 938.4550889750326,
+      "y": 497.7072413161617,
       "width": 32.19996643066406,
       "height": 25,
       "angle": 0,
@@ -1469,12 +1469,12 @@
       "frameId": null,
       "index": "b1D",
       "roundness": null,
-      "seed": 1481752011,
-      "version": 12,
-      "versionNonce": 1071440875,
+      "seed": 627475536,
+      "version": 5,
+      "versionNonce": 2050805936,
       "isDeleted": false,
       "boundElements": null,
-      "updated": 1792928814989,
+      "updated": 1792928754395,
       "link": null,
       "locked": false,
       "text": "yes",
@@ -1488,10 +1488,10 @@
       "lineHeight": 1.25
     },
     {
-      "id": "MB3E7T0gU4Tt73vcUCJhe",
+      "id": "YSdfkT8ifv5aKwOWo7wwm",
       "type": "text",
-      "x": 736.3122318321755,
-      "y": 656.5643841733046,
+      "x": 732.7408032607468,
+      "y": 653.4215270304475,
       "width": 22.519989013671875,
       "height": 25,
       "angle": 0,
@@ -1506,12 +1506,12 @@
       "frameId": null,
       "index": "b1E",
       "roundness": null,
-      "seed": 666322891,
-      "version": 4,
-      "versionNonce": 921286571,
+      "seed": 47468208,
+      "version": 12,
+      "versionNonce": 1018117200,
       "isDeleted": false,
       "boundElements": null,
-      "updated": 1792928817627,
+      "updated": 1792928761075,
       "link": null,
       "locked": false,
       "text": "no",

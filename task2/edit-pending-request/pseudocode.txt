@@ -1,0 +1,40 @@
+BEGIN EditPendingRequest
+
+    DISPLAY VacationRequests
+
+    INPUT RequestID
+
+    IF RequestStatus = "Pending" THEN
+
+        DISPLAY EditRequestPage
+
+        INPUT Title, Comments, Dates
+        INPUT Action
+
+        IF Action = "Withdraw" THEN
+            OUTPUT "Confirm Withdrawal?"
+            INPUT Confirmation
+
+            IF Confirmation = "Yes" THEN
+                SET RequestStatus = "Withdrawn"
+            END IF
+
+        ELSE IF Action = "Save" THEN
+
+            IF RequestData IS Valid THEN
+                UPDATE Request
+                OUTPUT "Request Updated Successfully"
+            ELSE
+                DISPLAY EditRequestPage
+                OUTPUT ValidationErrors
+            END IF
+
+        END IF
+
+    ELSE
+        OUTPUT "Only Pending Requests Can Be Edited"
+    END IF
+
+    DISPLAY VTSHomePage
+
+END

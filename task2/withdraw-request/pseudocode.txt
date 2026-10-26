@@ -1,0 +1,23 @@
+BEGIN WithdrawRequest
+
+    DISPLAY VacationRequests
+
+    INPUT RequestID
+
+    IF RequestStatus = "Pending" THEN
+
+        OUTPUT "Confirm withdrawal?"
+        INPUT Confirmation
+
+        IF Confirmation = "Yes" THEN
+            REMOVE Request FROM ManagerPendingList
+            SEND Email TO Manager
+            SET RequestStatus = "Withdrawn"
+            OUTPUT "Request Withdrawn Successfully"
+        END IF
+
+    ELSE
+        OUTPUT "Request Cannot Be Withdrawn"
+    END IF
+
+END
